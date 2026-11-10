@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikhitha S Kotian · Portfolio</title>
+  <meta name="description" content="Nikhitha S Kotian builds reliable software and data-driven AI systems: microservices, real-time apps, NLP pipelines and RAG/LLM tools." />
+  <meta property="og:title" content="Nikhitha S Kotian · Portfolio" />
+  <meta property="og:description" content="Reliable software and data-driven AI systems." />
+  <meta property="og:image" content="assets/endless-worlds.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2314b8a6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='white'%3ENK%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal,.load{opacity:1!important;transform:none!important}</style></noscript>
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-gh" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.650.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.120 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-lc" viewBox="0 0 24 24"><path d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.21l-2.66 2.85a5.27 5.27 0 0 0-1.43 3.2 5.45 5.45 0 0 0 1.45 4.42l4.33 4.34a5.04 5.04 0 0 0 7.13-.05l2.6-2.6a1.37 1.37 0 1 0-1.93-1.93l-2.61 2.6a2.3 2.3 0 0 1-3.27.04L6.4 14.75a2.67 2.67 0 0 1-.05-3.62l3.8-4.1 5.03-5.38A1.37 1.37 0 0 0 13.48 0Zm-2.87 13.3a1.37 1.37 0 1 0 0 2.74h9.82a1.37 1.37 0 1 0 0-2.74h-9.82Z"/></symbol>
+  </svg>
+
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- Background: drifting pastel blobs + cursor spotlight -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+    <div class="dots"></div>
+    <div class="spotlight"></div>
+  </div>
+
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- ============ Glass navbar ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner glass">
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-mark">NK</span>
+        <span class="brand-name">Nikhitha<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <span class="nav-indicator" id="navIndicator" aria-hidden="true"></span>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm nav-cta" href="assets/Nikhitha_S_Kotian_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-menu glass" id="mobileMenu" aria-label="Mobile">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="assets/Nikhitha_S_Kotian_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="status-pill glass load" style="--d:0"><span class="pulse"></span>Open to full-time roles · 2027</p>
+
+        <h1 class="hero-title load" style="--d:1">
+          Hi, I'm <span class="grad-text shimmer">Nikhitha S Kotian</span>
+        </h1>
+
+        <p class="hero-sub load" style="--d:2">
+          I build <span class="rotator"><span id="rotText">real-time apps</span><span class="caret"></span></span>
+        </p>
+
+        <p class="hero-lead load" style="--d:3">
+          Final-year Information Science student at NMAMIT. I take problems from raw data to tested,
+          shipped products, and I measure whether they actually work.
+        </p>
+
+        <div class="hero-ctas load" style="--d:4">
+          <a class="btn btn-primary" href="#projects">
+            View my work
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-glass" href="assets/Nikhitha_S_Kotian_Resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+            Resume
+          </a>
+        </div>
+
+        <ul class="socials load" style="--d:5" aria-label="Social links">
+          <li><a href="https://github.com/nikhitha-sk" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg class="fill"><use href="#i-gh"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/nikhithaskotian/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="fill"><use href="#i-in"/></svg></a></li>
+          <li><a href="https://leetcode.com/u/nikhithaskotian/" target="_blank" rel="noopener" aria-label="LeetCode" title="LeetCode"><svg class="fill"><use href="#i-lc"/></svg></a></li>
+          <li><a href="mailto:nikhithaskotian07@gmail.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg></a></li>
+        </ul>
+      </div>
+
+      <!-- Hero visual: floating glass panels -->
+      <div class="hero-visual load" style="--d:2" aria-hidden="true">
+        <div class="hero-orb"></div>
+        <div class="code-card glass float-a">
+          <div class="code-bar">
+            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+            <span class="code-file mono">pipeline.py</span>
+          </div>
+<pre class="code mono"><span class="ln"><span class="c-k">tickets</span> = load(<span class="c-s">"support.csv"</span>)</span>
+<span class="ln"><span class="c-k">clean</span>   = tickets.dedupe().mask_pii()</span>
+<span class="ln"><span class="c-k">model</span>.fit(clean)    <span class="c-c"># macro-F1 0.60</span></span>
+<span class="ln"><span class="c-k">agent</span>   = rag(<span class="c-s">"help_articles"</span>)</span>
+<span class="ln">api.deploy(<span class="c-s">"fastapi"</span>)  <span class="c-ok">✓ live</span></span></pre>
+        </div>
+
+        <div class="chart-card glass float-b">
+          <p class="chart-label">Tickets auto-routed</p>
+          <p class="chart-value"><span class="mono muted">28%</span> <span class="arrow-up">→</span> <b>61%</b></p>
+          <div class="bars">
+            <span style="--h:30%;--i:0"></span><span style="--h:42%;--i:1"></span><span style="--h:50%;--i:2"></span>
+            <span style="--h:64%;--i:3"></span><span style="--h:78%;--i:4"></span><span style="--h:96%;--i:5"></span>
+          </div>
+        </div>
+
+        <span class="chip-float glass f1">RAG</span>
+        <span class="chip-float glass f2">Go</span>
+        <span class="chip-float glass f3">SQL</span>
+        <span class="chip-float glass f4">Docker</span>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee" aria-label="Technologies I use">
+      <div class="marquee-track">
+        <span>Python</span><span>Go</span><span>TypeScript</span><span>SQL</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>Flutter</span><span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Docker</span><span>pandas</span><span>scikit-learn</span><span>LangGraph</span><span>FAISS</span><span>PyTorch</span><span>Streamlit</span>
+        <span aria-hidden="true">Python</span><span aria-hidden="true">Go</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">SQL</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">React</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Redis</span><span aria-hidden="true">RabbitMQ</span><span aria-hidden="true">Docker</span><span aria-hidden="true">pandas</span><span aria-hidden="true">scikit-learn</span><span aria-hidden="true">LangGraph</span><span aria-hidden="true">FAISS</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">Streamlit</span>
+      </div>
+    </div>
+
+    <!-- ============ About ============ -->
+    <section id="about" class="section container">
+      <header class="section-head reveal">
+        <p class="kicker">01 · About</p>
+        <h2 class="section-title">Reliable engineering, <span class="grad-text">decisions backed by data</span></h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="glass card about-text reveal">
+          <p>
+            I'm an Information Science student at <strong>NMAM Institute of Technology</strong> who enjoys both sides of a
+            product: the engineering that keeps it reliable and the numbers that show whether it's working.
+          </p>
+          <p>
+            I've built Go microservices with message queues, a real-time multiplayer game server, and a Flutter SIP
+            calling app during my internship at <strong>Comcent.io</strong>. I've also cleaned 60K+ real support tickets,
+            trained and evaluated classifiers, and built plain-English-to-SQL analytics with automatic charts.
+            <strong>RAG and LLM agents</strong> tie it all together, and I report results honestly instead of just demoing them.
+          </p>
+        </div>
+
+        <ul class="stats">
+          <li class="glass card stat reveal"><span class="stat-num" data-count="8.81" data-decimals="2">8.81</span><span class="stat-label">CGPA</span></li>
+          <li class="glass card stat reveal"><span class="stat-num" data-count="61" data-suffix="K+">61K+</span><span class="stat-label">Tickets processed</span></li>
+          <li class="glass card stat reveal"><span class="stat-num" data-count="7">7</span><span class="stat-label">Microservices shipped</span></li>
+          <li class="glass card stat reveal"><span class="stat-num" data-count="6">6</span><span class="stat-label">Featured builds</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Experience ============ -->
+    <section id="experience" class="section container">
+      <header class="section-head reveal">
+        <p class="kicker">02 · Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+      </header>
+
+      <article class="glass card exp reveal">
+        <div class="exp-logo" aria-hidden="true">C</div>
+        <div class="exp-body">
+          <div class="exp-top">
+            <h3 class="card-title">Software Developer Intern · <a class="link" href="https://github.com/endlessworlds/SIP-app" target="_blank" rel="noopener">Comcent.io</a></h3>
+            <span class="date-pill mono">Apr – Jul 2026 · Remote</span>
+          </div>
+          <ul class="bullets">
+            <li>Built a cross-platform, open-source <strong>SIP calling app in Flutter</strong>: the full call-handling flow (hang-up, mute, speaker) plus settings, dialpad, in-call and call-history screens.</li>
+            <li>Tested against a <strong>live SIP server</strong> to validate successful call flows and failure edge cases.</li>
+          </ul>
+          <ul class="chips">
+            <li>Flutter</li><li>Dart</li><li>SIP / VoIP</li><li>Baresip</li><li>Testing</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section id="projects" class="section container">
+      <header class="section-head reveal">
+        <p class="kicker">03 · Projects</p>
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-sub">A few builds I'm proud of, each with real numbers behind it.</p>
+      </header>
+
+      <div class="filters-wrap reveal">
+        <div class="filters glass" role="tablist" aria-label="Filter projects">
+          <span class="filter-indicator" id="filterIndicator" aria-hidden="true"></span>
+          <button class="filter active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="filter" role="tab" aria-selected="false" data-filter="dev">Engineering</button>
+          <button class="filter" role="tab" aria-selected="false" data-filter="data">Data &amp; AI</button>
+        </div>
+      </div>
+
+      <div class="projects" id="projectGrid" data-view="all">
+        <!-- Featured -->
+        <article class="glass card project featured reveal" data-cat="dev data">
+          <a class="featured-media" href="https://github.com/nikhitha-sk/endless-worlds" target="_blank" rel="noopener" aria-label="Endless Worlds on GitHub">
+            <img src="assets/endless-worlds.jpg" alt="Endless Worlds: a pixel-art island at night with a torch-lit player" loading="lazy" />
+            <span class="badge">★ Featured</span>
+          </a>
+          <div class="project-body">
+            <p class="tag">Educational game · AI · Multiplayer</p>
+            <h3 class="card-title"><a href="https://github.com/nikhitha-sk/endless-worlds" target="_blank" rel="noopener">Endless Worlds <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></h3>
+            <p>
+              Type any topic and get a living pixel island with a riddle written from the live web. A Python AI server
+              searches the web, chunks and embeds the text into <strong>FAISS</strong>, and has an LLM write validated quiz
+              questions with hints. A <strong>Q-learning</strong> agent adapts difficulty to each player.
+            </p>
+            <ul class="metrics">
+              <li><b>RAG</b><span>web → FAISS → LLM</span></li>
+              <li><b>Q-learning</b><span>adaptive difficulty</span></li>
+              <li><b>10</b><span>players per room</span></li>
+            </ul>
+            <ul class="chips">
+              <li>Python</li><li>FastAPI</li><li>FAISS</li><li>LLM (Groq)</li><li>Godot 4.5</li><li>Cloudflare</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="glass card project reveal" data-cat="data">
+          <div class="project-head">
+            <span class="icon-tile t-violet" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></span>
+            <a class="gh" href="https://github.com/nikhitha-sk/customer-support-intelligence" target="_blank" rel="noopener" aria-label="Source on GitHub"><svg class="fill"><use href="#i-gh"/></svg></a>
+          </div>
+          <p class="tag">NLP · Data pipeline · RAG</p>
+          <h3 class="card-title"><a href="https://github.com/nikhitha-sk/customer-support-intelligence" target="_blank" rel="noopener">Customer Support Intelligence</a></h3>
+          <p>
+            Cleans 61,765 raw tickets down to 23,695 high-quality ones, routes each to the right team, scores urgency
+            0–100, clusters complaint themes, and drafts cited replies with a <strong>LangGraph</strong> agent.
+          </p>
+          <ul class="metrics">
+            <li><b>28→61%</b><span>auto-routed tickets</span></li>
+            <li><b>85%</b><span>top-1 retrieval</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>scikit-learn</li><li>pandas</li><li>LangGraph</li><li>FastAPI</li><li>Streamlit</li>
+          </ul>
+        </article>
+
+        <article class="glass card project reveal" data-cat="data dev">
+          <div class="project-head">
+            <span class="icon-tile t-sky" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></svg></span>
+            <a class="gh" href="https://github.com/nikhitha-sk/SQL-BOT" target="_blank" rel="noopener" aria-label="Source on GitHub"><svg class="fill"><use href="#i-gh"/></svg></a>
+          </div>
+          <p class="tag">Analytics · Text-to-SQL · LLM</p>
+          <h3 class="card-title"><a href="https://github.com/nikhitha-sk/SQL-BOT" target="_blank" rel="noopener">AskSQL: Chat with Business Data</a></h3>
+          <p>
+            Ask “Which product sold the most last month?” in plain English and get safe SQL, an auto-picked chart
+            and a table. It handles follow-up questions, fixes its own failed SQL, and accepts CSV uploads.
+          </p>
+          <ul class="metrics">
+            <li><b>8</b><span>safety layers</span></li>
+            <li><b>40</b><span>question eval suite</span></li>
+          </ul>
+          <ul class="chips">
+            <li>SQL</li><li>FastAPI</li><li>Next.js</li><li>SQLGlot</li><li>Plotly</li><li>Gemini / Claude</li>
+          </ul>
+        </article>
+
+        <article class="glass card project reveal" data-cat="dev">
+          <div class="project-head">
+            <span class="icon-tile t-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5.5 5.5"/></svg></span>
+            <a class="gh" href="https://github.com/nikhitha-sk/AI-detective-murder-mystery" target="_blank" rel="noopener" aria-label="Source on GitHub"><svg class="fill"><use href="#i-gh"/></svg></a>
+          </div>
+          <p class="tag">Real-time · Multi-agent · Full-stack</p>
+          <h3 class="card-title"><a href="https://github.com/nikhitha-sk/AI-detective-murder-mystery" target="_blank" rel="noopener">AI Detective Murder Mystery</a></h3>
+          <p>
+            A multiplayer deduction game where every suspect is an LLM agent with hidden motives and private memory.
+            A separate <strong>solver agent</strong> checks each generated case, and the game rules are enforced in code, not just in prompts.
+          </p>
+          <ul class="metrics">
+            <li><b>2–6</b><span>players, live sync</span></li>
+            <li><b>XState</b><span>game phase machine</span></li>
+          </ul>
+          <ul class="chips">
+            <li>TypeScript</li><li>Next.js 15</li><li>Socket.IO</li><li>Redis</li><li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="glass card project reveal" data-cat="dev">
+          <div class="project-head">
+            <span class="icon-tile t-teal" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+            <a class="gh" href="https://github.com/nikhitha-sk/food-platform" target="_blank" rel="noopener" aria-label="Source on GitHub"><svg class="fill"><use href="#i-gh"/></svg></a>
+          </div>
+          <p class="tag">Backend · Microservices · Payments</p>
+          <h3 class="card-title"><a href="https://github.com/nikhitha-sk/food-platform" target="_blank" rel="noopener">Scalable Food Ordering &amp; Delivery</a></h3>
+          <p>
+            Seven Go services (auth, user, restaurant, order, delivery, notification and admin) that talk through
+            <strong>RabbitMQ</strong>, with Razorpay payments and React apps for customers, restaurants and riders.
+          </p>
+          <ul class="metrics">
+            <li><b>7</b><span>Go services</span></li>
+            <li><b>Docker</b><span>compose-orchestrated</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Go</li><li>PostgreSQL</li><li>Redis</li><li>RabbitMQ</li><li>Docker</li><li>React</li>
+          </ul>
+        </article>
+
+        <article class="glass card project wide reveal" data-cat="data">
+          <div class="project-head">
+            <span class="icon-tile t-amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12m0-1.5v-6a1.5 1.5 0 0 1 3 0V12m0-5.5a1.5 1.5 0 0 1 3 0V14a7 7 0 0 1-7 7h-.5a6 6 0 0 1-5-2.7L3 15.2a1.6 1.6 0 0 1 2.6-1.9L8 15"/></svg></span>
+            <a class="gh" href="https://github.com/nikhitha-sk/sterile-interface" target="_blank" rel="noopener" aria-label="Source on GitHub"><svg class="fill"><use href="#i-gh"/></svg></a>
+          </div>
+          <p class="tag">Computer vision · Healthcare</p>
+          <h3 class="card-title"><a href="https://github.com/nikhitha-sk/sterile-interface" target="_blank" rel="noopener">Sterile Interface for Surgeons</a></h3>
+          <p>
+            A touch-free gesture system that lets surgeons browse and zoom medical scans in a sterile operating room,
+            combining real-time hand tracking with <strong>MiDaS depth estimation</strong> from a plain webcam.
+          </p>
+          <ul class="metrics">
+            <li><b>0</b><span>touch required</span></li>
+            <li><b>Real-time</b><span>webcam tracking</span></li>
+          </ul>
+          <ul class="chips">
+            <li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>PyTorch</li><li>MiDaS</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="center reveal">
+        <a class="btn btn-glass" href="https://github.com/nikhitha-sk?tab=repositories" target="_blank" rel="noopener">
+          <svg class="fill"><use href="#i-gh"/></svg>
+          More on GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Skills ============ -->
+    <section id="skills" class="section container">
+      <header class="section-head reveal">
+        <p class="kicker">04 · Skills</p>
+        <h2 class="section-title">My toolkit</h2>
+      </header>
+
+      <div class="skills-grid">
+        <div class="glass card skill-card reveal">
+          <h3 class="skill-head"><span class="skill-ico t-violet"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>Building</h3>
+          <dl>
+            <dt>Languages</dt><dd><ul class="chips"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Go</li><li>SQL</li><li>Dart</li></ul></dd>
+            <dt>Frameworks</dt><dd><ul class="chips"><li>FastAPI</li><li>Node.js</li><li>Express</li><li>Next.js</li><li>React</li><li>Flutter</li></ul></dd>
+            <dt>Systems</dt><dd><ul class="chips"><li>Microservices</li><li>REST APIs</li><li>Socket.IO</li><li>RabbitMQ</li><li>Redis</li></ul></dd>
+            <dt>Tooling</dt><dd><ul class="chips"><li>Git</li><li>Docker</li><li>PostgreSQL</li><li>MongoDB</li><li>GitHub Actions</li></ul></dd>
+          </dl>
+        </div>
+
+        <div class="glass card skill-card reveal">
+          <h3 class="skill-head"><span class="skill-ico t-teal"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Data &amp; AI</h3>
+          <dl>
+            <dt>Analysis</dt><dd><ul class="chips"><li>SQL</li><li>pandas</li><li>Data cleaning</li><li>EDA</li><li>Streamlit</li><li>Plotly</li></ul></dd>
+            <dt>ML / NLP</dt><dd><ul class="chips"><li>scikit-learn</li><li>Classification</li><li>Clustering</li><li>PyTorch</li><li>OpenCV</li></ul></dd>
+            <dt>GenAI</dt><dd><ul class="chips"><li>RAG</li><li>LLM APIs</li><li>Embeddings</li><li>FAISS</li><li>LangGraph</li></ul></dd>
+            <dt>Practice</dt><dd><ul class="chips"><li>Model evaluation</li><li>Macro-F1</li><li>Error analysis</li><li>Reinforcement learning</li></ul></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Education ============ -->
+    <section id="education" class="section container">
+      <header class="section-head reveal">
+        <p class="kicker">05 · Education</p>
+        <h2 class="section-title">Education &amp; activities</h2>
+      </header>
+
+      <ol class="timeline" id="timeline">
+        <li class="glass card reveal">
+          <span class="date-pill mono">2023 – 2027</span>
+          <h3 class="card-title">B.Tech, Information Science &amp; Engineering</h3>
+          <p class="muted">NMAM Institute of Technology, Nitte, Udupi</p>
+          <span class="score">CGPA 8.81</span>
+        </li>
+        <li class="glass card reveal">
+          <span class="date-pill mono">2023</span>
+          <h3 class="card-title">Pre-University (PUC)</h3>
+          <p class="muted">Vidyodaya PU College, Udupi</p>
+          <span class="score">93%</span>
+        </li>
+        <li class="glass card reveal">
+          <span class="date-pill mono">2025</span>
+          <h3 class="card-title">Volunteer, Coding Contest · Incridea 2025</h3>
+          <p class="muted">Helped run the coding contest at NMAMIT's national-level tech fest and supported participants. I'm also an active member of the branch club, which runs coding contests, workshops and technical events.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section id="contact" class="section container">
+      <div class="glass card contact-card reveal">
+        <p class="kicker">06 · Contact</p>
+        <h2 class="contact-title">Let's build something <span class="grad-text">useful</span>.</h2>
+        <p>
+          I'm open to full-time roles and internships. If you have an opening, a project idea or just a question,
+          I'd love to hear from you.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:nikhithaskotian07@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+            Say hello
+          </a>
+          <button class="btn btn-glass" id="copyEmail" type="button" data-email="nikhithaskotian07@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+            <span>Copy email</span>
+          </button>
+        </div>
+        <ul class="socials center-row" aria-label="Social links">
+          <li><a href="https://github.com/nikhitha-sk" target="_blank" rel="noopener" aria-label="GitHub"><svg class="fill"><use href="#i-gh"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/nikhithaskotian/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="fill"><use href="#i-in"/></svg></a></li>
+          <li><a href="https://leetcode.com/u/nikhithaskotian/" target="_blank" rel="noopener" aria-label="LeetCode"><svg class="fill"><use href="#i-lc"/></svg></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Nikhitha S Kotian · Udupi, India</p>
+    <a href="#home" class="link">Back to top ↑</a>
+  </footer>
+
+  <button class="to-top glass" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
